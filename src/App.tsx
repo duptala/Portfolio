@@ -1,11 +1,12 @@
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-function App() {
-
+const App: React.FC = () => {
   return (
-    <>
-      <p className='text-3xl'>Hello, this is tailwind added!</p>
-    </>
-  )
-}
+    <div>
+      <Outlet />
+    </div>
+  );
+};
 
 export default App
