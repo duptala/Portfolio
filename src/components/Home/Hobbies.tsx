@@ -11,7 +11,7 @@ const Hobbies = () => {
   return (
     <div className="w-full h-full flex flex-col bg-hobbies rounded-3xl p-3">
       <h1 className="relative left-2 top-2 azeret-mono-600 font-bold text-5xl sm:text-xl md:text-3xl lg:text-5xl xl:text-xl dark:text-black mb-3 sm:mb-1  md:mb-2">
-        &#x1F925; <span className="opacity-70">Hobbies</span>
+        &#x1f3ae; <span className="opacity-70">Hobbies</span>
       </h1>
       <ul className="text-center h-full flex flex-col justify-center align-middle ml-16 sm:ml-7 lg:ml-16 xl:ml-7">
         {hobbies.map((hobby, index) => (
