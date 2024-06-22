@@ -1,18 +1,26 @@
 import React, { useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 interface HoverBoxProps {
     children: React.ReactNode;
     className?: string;
+    isClickable?: boolean;
+    link?: string;
 }
 
-const HoverBox: React.FC<HoverBoxProps> = ({ children, className }) => {
+const HoverBox: React.FC<HoverBoxProps> = ({
+    children,
+    className,
+    isClickable = false,
+    link,
+}) => {
     const boxRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const handleMouseMove = (event: MouseEvent) => {
-            const box = boxRef.current;
-            if (!box) return;
+        const box = boxRef.current;
+        if (!box) return;
 
+        const handleMouseMove = (event: MouseEvent) => {
             const rect = box.getBoundingClientRect();
             const mouseX = event.clientX - rect.left;
             const mouseY = event.clientY - rect.top;
@@ -24,34 +32,34 @@ const HoverBox: React.FC<HoverBoxProps> = ({ children, className }) => {
         };
 
         const handleMouseLeave = () => {
-            const box = boxRef.current;
-            if (box) {
-                box.style.transform = 'scale(1.0)';
-            }
+            box.style.transform = 'scale(1.0)';
         };
 
-        const box = boxRef.current;
-        if (box) {
-            box.addEventListener('mousemove', handleMouseMove);
-            box.addEventListener('mouseleave', handleMouseLeave);
-        }
+        // adding event listeners
+        box.addEventListener('mousemove', handleMouseMove);
+        box.addEventListener('mouseleave', handleMouseLeave);
 
+        // removing event listeners
         return () => {
-            if (box) {
-                box.removeEventListener('mousemove', handleMouseMove);
-                box.removeEventListener('mouseleave', handleMouseLeave);
-            }
+            box.removeEventListener('mousemove', handleMouseMove);
+            box.removeEventListener('mouseleave', handleMouseLeave);
         };
     }, []);
 
     return (
-        <div
-            className={`transition-transform duration-150 ease-linear ${className}`}
-            ref={boxRef}
-        >
-            {children}
-        </div>
+        <>
+            {isClickable && link ? (
+                <div ref={boxRef} className={`transition-transform duration-150 ease-linear ${className}`}>
+                    <Link to={link} className="hover-box-link" style={{ pointerEvents: 'auto' }}>
+                        {children}
+                    </Link>
+                </div>
+            ) : (
+                <div ref={boxRef} className={`transition-transform duration-150 ease-linear ${className}`}>
+                    {children}
+                </div>
+            )}
+        </>
     );
 };
-
 export default HoverBox;

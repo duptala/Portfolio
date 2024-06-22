@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ScrollToTop from './components/Home/ScrollToTop';
 
 
 
@@ -34,6 +35,7 @@ const App: React.FC = () => {
 
   return (
     <div className='bg-gradient-light dark:bg-gradient-dark min-h-screen'>
+      <ScrollToTop />
       <div className='container mx-auto pb-10'>
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <div className='min-h-screen'>

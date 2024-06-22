@@ -23,10 +23,10 @@ const Home: React.FC = () => {
                     <HoverBox className='col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
                         <Location />
                     </HoverBox>
-                    <HoverBox className='col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
+                    <HoverBox className='col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1' isClickable={true} link='aboutme'>
                         <AboutMe />
                     </HoverBox>
-                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 h-60 md:h-80 xl:h-auto'>
+                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 h-60 md:h-80 xl:h-auto' isClickable={true} link='projects'>
                         <Projects />
                     </HoverBox>
                     <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
@@ -35,13 +35,13 @@ const Home: React.FC = () => {
                     <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
                         <TwoTruthsOneLie />
                     </HoverBox>
-                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 h-60 md:h-80 xl:h-auto'>
+                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 h-60 md:h-80 xl:h-auto' isClickable={true} link='designs'>
                         <Designs />
                     </HoverBox>
                     <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
                         <Hobbies />
                     </HoverBox>
-                    <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
+                    <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1' isClickable={true} link='blog'>
                         <Blog />
                     </HoverBox>
                     <HoverBox className='col-span-1 hidden xl:flex md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
