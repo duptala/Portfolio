@@ -1,57 +1,80 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const form = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e) => {
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setMessage(e.target.value);
+  };
+
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Check if email and message are not empty
-    if (email.trim() === "" || message.trim() === "") {
-      alert("Please enter both email and message.");
+    if (email === "" || message === "") {
+      alert("Please fill in all fields!");
       return;
     }
 
-    // EmailJS configuration and sending email
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
-      .then(
-        (result) => {
-          console.log("Email sent successfully:", result.text);
-          alert("Your message has been sent successfully!");
-          setEmail("");
-          setMessage("");
-        },
-        (error) => {
-          console.error("Failed to send email:", error.text);
-          alert("Oops! Something went wrong. Please try again later.");
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID!,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
+        form.current!,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_API_KEY!,
         }
       );
+      console.log("SUCCESS!");
+      alert("Message sent successfully!");
+    } catch (error) {
+      console.log("FAILED...", error);
+      alert(
+        "Message failed to send. Please try again later or get in contact through other platforms!"
+      );
+    }
   };
 
   return (
     <div className="w-full h-full bg-contactform rounded-3xl">
       <div className="flex flex-col">
-        <h1 className=" px-5 pt-5 azeret-mono-600 font-bold text-2xl dark:text-black">
+        <h1 className="px-5 pt-5 azeret-mono-600 font-bold text-2xl dark:text-black">
           &#x1F4E5; <span className="opacity-70">Say Hello!</span>
         </h1>
-        <div className="dark:text-darkgrey flex flex-col py-3 px-6 gap-2 azeret-mono-400">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="dark:text-darkgrey flex flex-col py-3 px-6 gap-2 azeret-mono-400"
+        >
           <input
             type="email"
             placeholder="Email"
+            name="email"
+            value={email}
+            onChange={handleEmailChange}
             className="rounded-xl text-md pl-5 min-h-8 focus:text-black focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
           />
 
           <textarea
             placeholder="Type your message..."
+            name="message"
+            value={message}
+            onChange={handleMessageChange}
             className="rounded-xl text-sm pl-3 pr-5 py-2 h-20 resize-none focus:text-black focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
           ></textarea>
 
-          <button className="bg-gray-400 p-2 text-white font-bold rounded-3xl">
-            Send!
-          </button>
-        </div>
+          <input
+            type="submit"
+            className="bg-gray-400 p-2 text-white font-bold rounded-3xl"
+            value="Send!"
+          />
+        </form>
       </div>
     </div>
   );
