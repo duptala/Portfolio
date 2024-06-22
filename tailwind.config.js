@@ -24,8 +24,8 @@ export default {
         'lightgrey': "#DEDEDE",
       },
       backgroundImage: {
-        'gradient-dark': 'linear-gradient(180deg, rgba(67,53,85,1) 0%, rgba(49,45,54,1) 52%, rgba(41,41,41,1) 100%)',
-        'gradient-light': 'linear-gradient(180deg, rgba(237,223,255,1) 0%, rgba(255,255,255,1) 100%)'
+        'gradient-dark': 'linear-gradient(180deg, rgba(67,53,85,1) 0%, rgba(49,45,54,1) 20%, rgba(41,41,41,1) 100%)',
+        'gradient-light': 'linear-gradient(180deg, rgba(237,223,255,1) 0%, rgba(250,246,255,1) 20%, rgba(255,255,255,1) 100%);'
       },
     },
   },
