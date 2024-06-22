@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark-overlay': '#292929',
+        'darkgrey': '#292929',
         'aboutme': "#FF9A9A",
         'projects': "#D59EFF",
         'spotify': "#D3FFC4",

@@ -34,7 +34,7 @@ const App: React.FC = () => {
 
   return (
     <div className='bg-gradient-light dark:bg-gradient-dark min-h-screen'>
-      <div className='container mx-auto'>
+      <div className='container mx-auto pb-10'>
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <div className='min-h-screen'>
           <Outlet />

@@ -3,7 +3,7 @@ import HelloFace from '../../../public/Helloface.png'
 
 const Intro = () => {
     return (
-        <div className='w-full h-full bg-white dark:bg-dark-overlay rounded-3xl grid grid-cols-3'>
+        <div className='w-full h-full bg-white dark:bg-darkgrey rounded-3xl grid grid-cols-3'>
             <div className='hidden md:grid md:col-span-1 justify-center items-center'>
                 <div className='lg:scale-100 xl:scale-75 -rotate-3'>
                     <img src={HelloFace} alt="HelloFace" />
