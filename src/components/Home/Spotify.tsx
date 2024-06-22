@@ -2,7 +2,9 @@ import React from 'react'
 
 const Spotify = () => {
     return (
-        <div>Spotify</div>
+        <div className='w-full h-full bg-spotify rounded-3xl'>
+
+        </div>
     )
 }
 

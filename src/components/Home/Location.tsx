@@ -2,7 +2,9 @@ import React from 'react'
 
 const Location = () => {
     return (
-        <div>Location</div>
+        <div className='w-full h-full bg-gray-600 rounded-3xl'>
+            Location
+        </div>
     )
 }
 

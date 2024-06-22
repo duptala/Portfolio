@@ -2,7 +2,9 @@ import React from 'react'
 
 const Designs = () => {
     return (
-        <div>Designs</div>
+        <div className='w-full h-full bg-designs rounded-3xl'>
+            Designs
+        </div>
     )
 }
 

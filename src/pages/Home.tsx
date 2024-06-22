@@ -16,38 +16,38 @@ const Home: React.FC = () => {
     return (
         <div className='container mx-auto max-w-6xl pt-5 px-5 md:px-10 xl:px-20'>
             <div className='grid gap-8'>
-                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 xl:grid-cols-8 gap-8'>
-                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-6 rounded-xl bg-red-300 h-80 md:h-96 xl:h-auto'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 xl:grid-cols-8 gap-8 dark:text-white'>
+                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-6 h-80 md:h-96 xl:h-auto'>
                         <Intro />
                     </HoverBox>
-                    <HoverBox className='col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
+                    <HoverBox className='col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
                         <Location />
                     </HoverBox>
-                    <HoverBox className='col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
+                    <HoverBox className='col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
                         <AboutMe />
                     </HoverBox>
-                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 rounded-xl bg-red-300 h-60 md:h-80 xl:h-auto'>
+                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 h-60 md:h-80 xl:h-auto'>
                         <Projects />
                     </HoverBox>
-                    <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
+                    <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
                         <Spotify />
                     </HoverBox>
-                    <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
+                    <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
                         <TwoTruthsOneLie />
                     </HoverBox>
-                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 rounded-xl bg-red-300 h-60 md:h-80 xl:h-auto'>
+                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 h-60 md:h-80 xl:h-auto'>
                         <Designs />
                     </HoverBox>
-                    <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
+                    <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
                         <Hobbies />
                     </HoverBox>
-                    <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
+                    <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
                         <Blog />
                     </HoverBox>
-                    <HoverBox className='col-span-1 hidden lg:flex md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
+                    <HoverBox className='col-span-1 hidden xl:flex md:col-span-3 xl:col-span-2 aspect-w-1 aspect-h-1'>
                         <Github />
                     </HoverBox>
-                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 rounded-xl bg-red-300 h-60 md:h-80 xl:h-auto'>
+                    <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 h-60 md:h-80 xl:h-auto'>
                         <ContactForm />
                     </HoverBox>
                 </div>

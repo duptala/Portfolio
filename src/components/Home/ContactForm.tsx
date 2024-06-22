@@ -2,7 +2,9 @@ import React from 'react'
 
 const ContactForm = () => {
     return (
-        <div>ContactForm</div>
+        <div className='w-full h-full bg-contactform rounded-3xl'>
+            Contact Form
+        </div>
     )
 }
 
