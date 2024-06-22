@@ -20,7 +20,7 @@ const HoverBox: React.FC<HoverBoxProps> = ({ children, className }) => {
             const offsetX = (mouseX - rect.width / 2) * 0.02;
             const offsetY = (mouseY - rect.height / 2) * 0.02;
 
-            box.style.transform = `scale(1.005) translate(${offsetX}px, ${offsetY}px)`;
+            box.style.transform = `scale(1.015) translate(${offsetX}px, ${offsetY}px)`;
         };
 
         const handleMouseLeave = () => {
@@ -46,7 +46,7 @@ const HoverBox: React.FC<HoverBoxProps> = ({ children, className }) => {
 
     return (
         <div
-            className={`transition-transform duration-75 ease-linear ${className}`}
+            className={`transition-transform duration-100 ease-linear ${className}`}
             ref={boxRef}
         >
             {children}

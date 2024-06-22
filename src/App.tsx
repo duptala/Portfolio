@@ -6,16 +6,6 @@ import Footer from './components/Footer';
 
 
 const App: React.FC = () => {
-  const toggleDarkMode = () => {
-    const htmlElement = document.documentElement;
-    if (htmlElement.classList.contains('dark')) {
-      htmlElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    } else {
-      htmlElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  };
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
@@ -34,7 +24,6 @@ const App: React.FC = () => {
           <Outlet />
         </div>
         <Footer />
-        <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
       </div>
     </div>
   );
