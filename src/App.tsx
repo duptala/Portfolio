@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className='container mx-auto p-10'>
+    <div className='container mx-auto'>
       <Header />
       <Outlet />
       <Footer />
