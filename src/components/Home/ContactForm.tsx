@@ -66,12 +66,12 @@ const ContactForm = () => {
             name="message"
             value={message}
             onChange={handleMessageChange}
-            className="rounded-xl text-sm pl-3 pr-5 py-2 h-20 resize-none focus:text-black focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
+            className="rounded-xl text-sm pl-3 pr-5 py-2 min-h-10 md:h-36 xl:h-full resize-none focus:text-black focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
           ></textarea>
 
           <input
             type="submit"
-            className="bg-gray-400 p-2 text-white font-bold rounded-3xl"
+            className="bg-gray-400 p-2 text-white font-bold rounded-3xl hover:cursor-pointer hover:bg-gray-500 duration-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
             value="Send!"
           />
         </form>
