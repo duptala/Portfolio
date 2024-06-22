@@ -11,9 +11,9 @@ const Location = () => {
           alt="Location of my whereabouts"
         />
         <div className="absolute inset-0 flex items-center justify-center h-fit">
-          <div className="absolute top-10 right-4 transform scale-[0.4] rounded-full bg-white p-1 shadow-xl border-black border-4">
+          <div className="absolute top-10 right-4 transform scale-[0.4] rounded-full bg-white p-1 drop-shadow-xl shadow-xl border-black border-4">
             <img
-              className="rounded-full"
+              className="rounded-full scale-[1.22] pl-2 pt-2"
               src={SillyFace}
               alt="A picture of me on the map!"
             />
