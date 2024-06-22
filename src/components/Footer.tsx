@@ -14,8 +14,8 @@ const Footer = () => {
   return (
     <div className="dark:text-white p-8 flex flex-col justify-center items-center dela-gothic-one-regular text-6xl text-center">
       <h1>Devesh Duptala</h1>
-      <p className="azeret-mono-400 text-sm relative md:right-10 mt-5 md:mt-2 text-darkgrey dark:text-midgrey">
-        All Rights Reserved. 2024
+      <p className="azeret-mono-400 text-xs relative md:right-24 mt-5 md:mt-2 text-darkgrey dark:text-midgrey">
+        &copy; 2024 Devesh Duptala - All Rights Reserved
       </p>
       <div className="flex flex-row gap-8 mt-5 text-[1.5rem]">
         <Link
