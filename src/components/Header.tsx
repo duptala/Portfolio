@@ -1,23 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Switch from './Switch/Switch';
 
-const Header = () => {
-    const toggleDarkMode = () => {
-        const htmlElement = document.documentElement;
-        if (htmlElement.classList.contains('dark')) {
-            htmlElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-        } else {
-            htmlElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-        }
-    };
+interface HeaderProps {
+    darkMode: boolean;
+    toggleDarkMode: () => void;
+}
 
+const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
     return (
         <div className='p-8 container mx-auto flex justify-between'>
             <div className='dark:text-white'>Devesh.</div>
-            <button className='dark:text-white' onClick={toggleDarkMode}>Toggle Dark Mode</button>
+            <Switch isChecked={darkMode} toggleSwitch={toggleDarkMode} />
         </div>
-    )
+    );
 }
 
-export default Header
+export default Header;
