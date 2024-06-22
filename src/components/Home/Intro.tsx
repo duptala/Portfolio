@@ -13,17 +13,17 @@ const Intro = () => {
           Hello &#x1F44B;&#x1F3FE; I'm Devesh! &#129412;
         </h1>
         <p className="md:text-md lg:text-xl xl:text-sm text-justify">
-          I&apos;m a{" "}
+          I'm a{" "}
           <span className="text-brightpinktext dark:text-pinktext font-bold">
             developer
           </span>{" "}
-          +{" "}
+          and{" "}
           <span className="text-brightpinktext dark:text-pinktext font-bold">
             graphic designer
           </span>
-          . Welcome to my space on the internet where you can learn about me :)
-          I&apos;m passionate about full-stack development, hosting, networking,
-          and design!
+          , passionate about full-stack development, hosting, networking, and
+          design. Explore my cozy little corner of the internet to learn more
+          about me and what I do! &#127775;
         </p>
       </div>
     </div>
