@@ -19,6 +19,7 @@ export default {
         'github': "#D3FFE5",
         'contactform': "#E6E6E6",
         'pinktext': "#FEBDFF",
+        'brightpinktext': "#FF8BE5",
         'midgrey': "#CCCCCC",
         'lightgrey': "#DEDEDE",
       },

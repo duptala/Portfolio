@@ -9,7 +9,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
     return (
         <div className='p-8 container mx-auto flex justify-between'>
-            <div className='dark:text-white'>Devesh.</div>
+            <div className='dark:text-white dela-gothic-one-regular text-xl'>Devesh</div>
             <Switch isChecked={darkMode} toggleSwitch={toggleDarkMode} />
         </div>
     );
