@@ -1,7 +1,16 @@
 import React from 'react';
 import HoverBox from '../components/HoverBox'; // Adjust the import path as needed
-import Intro from '../components/Intro';
-
+import Intro from '../components/Home/Intro';
+import Location from '../components/Home/Location';
+import AboutMe from '../components/Home/AboutMe';
+import Projects from '../components/Home/Projects';
+import Spotify from '../components/Home/Spotify';
+import TwoTruthsOneLie from '../components/Home/TwoTruthsOneLie';
+import Designs from '../components/Home/Designs';
+import Hobbies from '../components/Home/Hobbies';
+import Blog from '../components/Home/Blog';
+import Github from '../components/Home/Github';
+import ContactForm from '../components/Home/ContactForm';
 
 const Home: React.FC = () => {
     return (
@@ -12,34 +21,34 @@ const Home: React.FC = () => {
                         <Intro />
                     </HoverBox>
                     <HoverBox className='col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
-                        Location
+                        <Location />
                     </HoverBox>
                     <HoverBox className='col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
-                        About Me
+                        <AboutMe />
                     </HoverBox>
                     <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 rounded-xl bg-red-300 h-60 md:h-80 xl:h-auto'>
-                        Projects
+                        <Projects />
                     </HoverBox>
                     <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
-                        Spotify
+                        <Spotify />
                     </HoverBox>
                     <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
-                        2 Truths 1 Lie
+                        <TwoTruthsOneLie />
                     </HoverBox>
                     <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 rounded-xl bg-red-300 h-60 md:h-80 xl:h-auto'>
-                        Graphic Designs
+                        <Designs />
                     </HoverBox>
                     <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
-                        Hobbies
+                        <Hobbies />
                     </HoverBox>
                     <HoverBox className='col-span-1 sm:col-span-1 md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
-                        Blog
+                        <Blog />
                     </HoverBox>
                     <HoverBox className='col-span-1 hidden lg:flex md:col-span-3 xl:col-span-2 rounded-xl bg-red-300 aspect-w-1 aspect-h-1'>
-                        GitHub
+                        <Github />
                     </HoverBox>
                     <HoverBox className='col-span-1 sm:col-span-2 md:col-span-6 xl:col-span-4 rounded-xl bg-red-300 h-60 md:h-80 xl:h-auto'>
-                        Submit Form
+                        <ContactForm />
                     </HoverBox>
                 </div>
             </div>
