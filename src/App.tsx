@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 
 
 const App: React.FC = () => {
-
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
     if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -17,7 +16,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className='dark:bg-gradient-dark min-h-screen'>
+    <div className='bg-gradient-light dark:bg-gradient-dark min-h-screen'>
       <div className='container mx-auto'>
         <Header />
         <div className='min-h-screen'>
