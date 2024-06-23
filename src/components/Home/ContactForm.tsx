@@ -42,7 +42,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full h-full bg-contactform rounded-3xl">
+    <div className="w-full h-full bg-contactform rounded-3xl  overflow-hidden hover:shadow-gray-300/10 hover:shadow-2xl duration-150">
       <div className="flex flex-col">
         <h1 className="px-5 pt-5 azeret-mono-600 font-bold text-2xl dark:text-black">
           &#x1F4E5; <span className="opacity-70">Say Hello!</span>
