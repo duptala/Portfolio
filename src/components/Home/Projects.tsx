@@ -12,7 +12,7 @@ const Projects = () => {
         <span className="flex items-center justify-center text-[2em] leading-none">
           &#x1f6e0;
         </span>
-        <span className="text-black/70 leading-tight">
+        <span className="text-black/70 leading-tight md:text-4xl lg:text-5xl xl:text-2xl">
           Software
           <br />
           Projects
