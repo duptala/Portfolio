@@ -23,21 +23,21 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin className="dark:text-white dark:hover:text-midgrey duration-150 hover:text-midgrey" />
+          <FaLinkedin className="dark:text-white dark:hover:text-purple-300 duration-150 hover:text-purple-300" />
         </Link>
         <Link
           to={"https://github.com/duptala"}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="dark:text-white dark:hover:text-midgrey duration-150 hover:text-midgrey" />
+          <FaGithub className="dark:text-white dark:hover:text-purple-300 duration-150 hover:text-purple-300" />
         </Link>
         <Link
           to={"https://www.behance.net/corzah"}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaBehance className="dark:text-white dark:hover:text-midgrey duration-150 hover:text-midgrey" />
+          <FaBehance className="dark:text-white dark:hover:text-purple-300 duration-150 hover:text-purple-300" />
         </Link>
       </div>
     </div>
