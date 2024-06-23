@@ -7,6 +7,7 @@ interface ProjectData {
   date: string;
   image: string;
   link?: string;
+  github_link?: string;
   in_progress: boolean;
   tech_stack: string[];
 }
@@ -28,6 +29,7 @@ const projects: ProjectData[] = [
     date: "2024",
     image: "../../../public/projects/portfolio.png",
     link: "https://deveshduptala.com",
+    github_link: "https://github.com/duptala/Portfolio",
     in_progress: false,
     tech_stack: ["React", "Tailwind", "TypeScript", "Self-Hosted"],
   },
