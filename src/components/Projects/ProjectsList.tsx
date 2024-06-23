@@ -49,7 +49,7 @@ const projects: ProjectData[] = [
 
 const ProjectsList = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center p-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16 justify-center items-center p-8">
       {projects.map((project, index) => (
         <Project key={index} project={project} />
       ))}
