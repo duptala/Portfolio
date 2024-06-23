@@ -33,6 +33,18 @@ const projects: ProjectData[] = [
     in_progress: false,
     tech_stack: ["React", "Tailwind", "TypeScript", "Self-Hosted"],
   },
+  {
+    title: "Course Unbox",
+    description: `CourseUnbox is a personal project that I made 
+        where students can online review platform
+        I made for students to be able to leave reviews
+        for university courses. Over 30+ users.`,
+    date: "2024",
+    image: "../../../public/projects/courseunbox.png",
+    link: "https://courseunbox.co.nz",
+    in_progress: false,
+    tech_stack: ["Next.js", "Tailwind", "PostgreSQL", "Python", "AWS"],
+  },
 ];
 
 const ProjectsList = () => {
