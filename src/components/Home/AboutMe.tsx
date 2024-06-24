@@ -1,5 +1,3 @@
-import React from "react";
-
 const AboutMe = () => {
   return (
     <div className="relative w-full h-full bg-aboutme rounded-3xl p-5 overflow-hidden hover:shadow-red-300/15 hover:shadow-2xl duration-150">

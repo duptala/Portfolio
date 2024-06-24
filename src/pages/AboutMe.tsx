@@ -1,4 +1,3 @@
-import React from "react";
 import Devesh from "/devesh.png";
 import HoverBox from "../components/HoverBox";
 import ExperienceList from "../components/AboutMe/ExperienceList";
