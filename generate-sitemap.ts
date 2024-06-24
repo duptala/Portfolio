@@ -1,4 +1,4 @@
-import { createWriteStream } from "fs";
+import { createWriteStream, existsSync, mkdirSync } from "fs";
 import { SitemapStream, streamToPromise } from "sitemap";
 import { resolve } from "path";
 
@@ -14,9 +14,13 @@ const links = [
 
 const sitemap = new SitemapStream({ hostname });
 
-const writeStream = createWriteStream(
-  resolve(__dirname, "public", "sitemap.xml")
-);
+// Ensure the `public` directory exists in the `dist` directory
+const publicDir = resolve("dist", "public");
+if (!existsSync(publicDir)) {
+  mkdirSync(publicDir, { recursive: true });
+}
+
+const writeStream = createWriteStream(resolve(publicDir, "sitemap.xml"));
 
 links.forEach((link) => sitemap.write(link));
 sitemap.end();
