@@ -6,7 +6,7 @@ const designTypes = ["Photoshop", "Blender", "Premiere Pro"];
 const Designs = () => {
   return (
     <div className="container mx-auto max-w-6xl pt-5 px-5 md:px-10 xl:px-20 justify-center items-center flex flex-col azeret-mono-400">
-      <h1 className="mb-4 azeret-mono-600 text-4xl text-brightpinktext dark:text-pinktext">
+      <h1 className="mb-4 azeret-mono-600 text-4xl text-darkgrey dark:text-pinktext">
         Graphic Designs
       </h1>
       <div className="flex flex-row gap-3 mb-5">
@@ -19,7 +19,7 @@ const Designs = () => {
           </p>
         ))}
       </div>
-      <p className="text-sm text-center text-gray-300 max-w-4xl mb-8">
+      <p className="text-sm text-center text-gray-500 dark:text-gray-300 max-w-4xl mb-8">
         I love creating visually appealing designs, from YouTube banners to
         posters and social media graphics. You can find my UI/UX work in the
         software projects section{" "}
@@ -28,7 +28,7 @@ const Designs = () => {
         </Link>
         !
       </p>
-      <p className="text-sm text-center text-gray-300 max-w-4xl">
+      <p className="text-sm text-center text-gray-500 dark:text-gray-300 max-w-4xl mb-8">
         {" "}
         I've created YouTube banners for clients like Lachlan, TekkerzKid,
         Morgz, and Jeanfils, all with over 1 million subscribers. For more of my

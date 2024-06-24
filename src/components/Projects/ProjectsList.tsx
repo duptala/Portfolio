@@ -24,8 +24,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "Portfolio",
-    description:
-      "This very site you’re seeing was done to showcase all my work in one tidy space on the web:)",
+    description: `This very site you're seeing was done to showcase all my work in one tidy space on the web :)`,
     date: "2024",
     image: "../../../projects/portfolio.png",
     link: "https://deveshduptala.com",
