@@ -55,22 +55,22 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
                 to={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm w-fit h-fit bg-purple-300 dark:bg-purple-200 px-2 py-1 rounded-lg hover:bg-purple-400 dark:hover:bg-purple-400 duration-200"
+                className="text-sm w-auto h-fit bg-purple-300 dark:bg-purple-200 px-2 py-1 rounded-lg hover:bg-purple-400 dark:hover:bg-purple-400 duration-200 whitespace-nowrap"
               >
-                View &#8594;
+                <span>View &#8594;</span>
               </Link>
             )}
           </div>
         </div>
-        <p className="mt-2 text-gray-700 dark:text-gray-300 font-normal text-xs">
+        <p className="mt-2 text-gray-700 dark:text-gray-300 font-normal text-xs text-justify">
           {project.description}
         </p>
         {project.tech_stack.length > 0 && (
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 p-3 bg-gray-200 dark:bg-darkgrey rounded-b-xl">
+          <div className="mt-2 grid grid-cols-2 lg:grid-cols-3 gap-2 p-3 bg-gray-200 dark:bg-darkgrey rounded-b-xl">
             {project.tech_stack.map((tech, index) => (
               <p
                 key={index}
-                className="text-xs w-fit bg-gray-300 dark:bg-darkgrey text-gray-700 dark:text-gray-500 dark:border-2 dark:border-gray-500 px-2 py-1 rounded-lg"
+                className="text-xs w-fit h-fit bg-gray-300 dark:bg-darkgrey text-gray-700 dark:text-gray-500 dark:border-2 dark:border-gray-500 px-2 py-1 rounded-lg"
               >
                 {tech}
               </p>

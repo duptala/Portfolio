@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectsList from "../components/Projects/ProjectsList";
 
-const projectTypes = ["Full-Stack", "DevOps", "Microcontrollers"];
+const projectTypes = ["Full-Stack", "Figma", "DevOps", "Microprocessors"];
 
 const Projects = () => {
   return (
