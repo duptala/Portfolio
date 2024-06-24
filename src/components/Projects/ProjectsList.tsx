@@ -15,19 +15,25 @@ interface ProjectData {
 const projects: ProjectData[] = [
   {
     title: "AUIS Website",
-    description:
-      `A website developed in a team of 9 for the Auckland University Indian Society (AUIS) that manages social events, processes event payments, and supports over 500 members.`,
+    description: `A website developed in a team of 9 for the Auckland University Indian Society (AUIS) that manages social events, processes event payments, and supports over 500 members.`,
     date: "2024",
     image: "../../../projects/auis.png",
     in_progress: true,
-    tech_stack: ["React", "Tailwind", "Strapi", "Stripe", "PostgreSQL", "Docker"],
+    tech_stack: [
+      "React",
+      "Tailwind",
+      "Strapi",
+      "Stripe",
+      "PostgreSQL",
+      "Docker",
+    ],
   },
   {
     title: "Portfolio",
     description: `My personal website that organizes and showcases all my projects and work in one tidy place on the web :)`,
     date: "2024",
     image: "../../../projects/portfolio.png",
-    link: "https://deveshduptala.co.nz",
+    link: "https://deveshduptala.com",
     github_link: "https://github.com/duptala/Portfolio",
     in_progress: false,
     tech_stack: ["React", "Tailwind", "TypeScript"],
