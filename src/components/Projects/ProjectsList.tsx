@@ -27,10 +27,10 @@ const projects: ProjectData[] = [
     description: `My personal website that organizes and showcases all my projects and work in one tidy place on the web :)`,
     date: "2024",
     image: "../../../projects/portfolio.png",
-    link: "https://deveshduptala.com",
+    link: "https://deveshduptala.co.nz",
     github_link: "https://github.com/duptala/Portfolio",
     in_progress: false,
-    tech_stack: ["React", "Tailwind", "TypeScript", "Self-Hosted"],
+    tech_stack: ["React", "Tailwind", "TypeScript"],
   },
   {
     title: "Course Unbox",
