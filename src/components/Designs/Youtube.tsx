@@ -39,8 +39,8 @@ const Youtube = () => {
                 <img src={MattyFootyHD} alt={MattyFootyHD} />
                 <img src={LightSkinChris} alt={LightSkinChris} />
                 <img src={Lachlan} alt={Lachlan} />
-                <img src={Reloaded} alt={Reloaded} />
-                <img src={Jeanfils} alt={Jeanfils} />
+                <img src={Reloaded} alt={Reloaded} loading='lazy' />
+                <img src={Jeanfils} alt={Jeanfils} loading='lazy' />
             </div>
         </>
     )
