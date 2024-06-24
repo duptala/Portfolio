@@ -4,6 +4,20 @@ import HoverBox from '../components/HoverBox'
 import ExperienceList from '../components/AboutMe/ExperienceList'
 import EducationList from '../components/AboutMe/EducationList'
 
+const coreLanguages = [
+    "Java", "JavaScript/TypeScript", "Python", "SQL"
+]
+
+const technologies = [
+    "ReactJS",
+    "Amazon Web Services (AWS)",
+    "Microsoft Azure Services",
+    "MySQL/PostgreSQL ❤️",
+    "MongoDB (with Mongoose)",
+    "TailwindCSS",
+    "JavaFX"
+]
+
 const AboutMe = () => {
     return (
         <div className="container mx-auto max-w-6xl pt-5 px-5 md:px-10 xl:px-20 justify-center items-center flex flex-col azeret-mono-400">
@@ -41,13 +55,23 @@ const AboutMe = () => {
                 </h1>
                 <EducationList />
             </div>
-            <div className='flex flex-col justify-center items-center mb-10'>
-                <h1 className="mb-3 flex flex-col justify-center items-center azeret-mono-600 text-2xl text-gray-600 dark:text-pinktext">
+            <div className='flex w-full flex-col justify-center items-center mb-6'>
+                <h1 className="mb-3 w-full flex flex-col justify-around items-center azeret-mono-600 text-2xl text-gray-600 dark:text-pinktext">
                     Skills
                 </h1>
-                <div className='flex flex-row gap-32'>
-                    <div>Core Skills</div>
-                    <div>Technologies</div>
+                <div className='flex w-full justify-evenly flex-col xl:flex-row gap-8 xl:gap-32'>
+                    <div className='w-full p-3 flex flex-col rounded-lg mb-4 border-2 dark:border-gray-50/10 border-gray-300/70'>
+                        <h1 className='flex justify-center dark:text-midgrey font-bold text-xl mb-3'>Core Languages</h1>
+                        {coreLanguages.map((language, index) => {
+                            return (<li className='text-gray-700 dark:text-gray-400' key={index}>{language}</li>)
+                        })}
+                    </div>
+                    <div className='w-full p-3 flex flex-col rounded-lg mb-4 border-2 dark:border-gray-50/10 border-gray-300/70'>
+                        <h1 className='flex justify-center dark:text-midgrey font-bold text-xl mb-3'>Technologies</h1>
+                        {technologies.map((technology, index) => {
+                            return (<li className='text-gray-700 dark:text-gray-400' key={index}>{technology}</li>)
+                        })}
+                    </div>
                 </div>
             </div>
         </div>
