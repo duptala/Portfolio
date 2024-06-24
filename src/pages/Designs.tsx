@@ -22,7 +22,7 @@ const Designs = () => {
                     </p>
                 ))}
             </div>
-            <p className="text-xs md:text-sm text-center text-gray-500 dark:text-gray-300 max-w-4xl mb-8">
+            <p className="text-xs md:text-sm text-center text-gray-500 dark:text-gray-300 max-w-4xl mb-6">
                 I enjoy creating designs like YouTube banners, posters, and social media graphics. You can find my UI/UX work in the
                 software projects section{" "}
                 <Link className="underline text-sky-400" to="/projects">
@@ -30,15 +30,10 @@ const Designs = () => {
                 </Link>
                 !
             </p>
-            <p className="text-xs md:text-sm text-center text-gray-500 dark:text-gray-300 max-w-4xl mb-8">
-                {" "}
-                I've created YouTube banners for clients like Lachlan, TekkerzKid,
-                Morgz, and Jeanfils, all with over 1 million subscribers. For more of my
-                work, check out my Behance portfolio!
-            </p>
             <Youtube />
             <Posters />
             <SocialMedia />
+            <Link to={"https://www.behance.net/corzah"} className="bg-purple-300 px-3 py-2 rounded-2xl text-xs hover:scale-105 duration-200 hover:shadow-xl hover:shadow-purple-500/10 mb-3">View more of my my design work!</Link>
         </div>
     );
 };
