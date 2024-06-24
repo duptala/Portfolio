@@ -33,7 +33,14 @@ const Designs = () => {
             <Youtube />
             <Posters />
             <SocialMedia />
-            <Link to={"https://www.behance.net/corzah"} className="bg-purple-300 px-3 py-2 rounded-2xl text-xs hover:scale-105 duration-200 hover:shadow-xl hover:shadow-purple-500/10 mb-3">View more of my my design work!</Link>
+            <a
+                href="https://www.behance.net/corzah"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-purple-300 px-3 py-2 rounded-2xl text-xs hover:scale-105 duration-200 hover:shadow-xl hover:shadow-purple-500/10 mb-3"
+            >
+                View more of my design work!
+            </a>
         </div>
     );
 };

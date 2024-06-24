@@ -42,23 +42,23 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
           </div>
           <div className="flex flex-row items-center gap-2 lg:gap-3">
             {project.github_link && (
-              <Link
-                to={project.github_link}
+              <a
+                href={project.github_link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaGithub className="text-2xl text-gray-600 dark:text-gray-300 hover:text-black/90 dark:hover:text-gray-500 duration-200" />
-              </Link>
+              </a>
             )}
             {project.link && (
-              <Link
-                to={project.link}
+              <a
+                href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm w-auto h-fit bg-purple-300 dark:bg-purple-200 px-2 py-1 rounded-lg hover:bg-purple-400 dark:hover:bg-purple-400 duration-200 whitespace-nowrap"
               >
                 <span>View &#8594;</span>
-              </Link>
+              </a>
             )}
           </div>
         </div>
