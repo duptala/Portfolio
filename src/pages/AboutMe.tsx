@@ -14,7 +14,7 @@ const AboutMe = () => {
                 <div className='w-full mb-5 md:mb-0 lg:w-1/2 flex justify-center'>
                     <HoverBox><img className='w-full md:w-auto lg:h-72 object-cover' src={Devesh} alt="A picture of me!" /></HoverBox>
                 </div>
-                <div className='w-full h-full lg:w-1/2 flex flex-col gap-6 justify-center text-xs text-justify text-gray-500 dark:text-gray-300 max-w-4xl px-5'>
+                <div className='w-full h-full lg:w-1/2 flex flex-col gap-6 justify-center text-xs text-justify text-gray-700 dark:text-gray-300 max-w-4xl px-5'>
                     <p>
                         Hello! I'm Devesh, a final year Software Engineering student at the University of Auckland.
                     </p>
@@ -35,7 +35,7 @@ const AboutMe = () => {
                 </h1>
                 <ExperienceList />
             </div>
-            <div className='flex flex-col justify-center items-center mb-10'>
+            <div className='flex flex-col w-full justify-center items-center mb-10'>
                 <h1 className="mb-3 flex flex-col justify-center items-center azeret-mono-600 text-2xl text-gray-600 dark:text-pinktext">
                     Education
                 </h1>
