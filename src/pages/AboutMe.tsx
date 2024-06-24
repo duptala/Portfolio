@@ -2,6 +2,7 @@ import Devesh from "/devesh.png";
 import HoverBox from "../components/HoverBox";
 import ExperienceList from "../components/AboutMe/ExperienceList";
 import EducationList from "../components/AboutMe/EducationList";
+import { Helmet } from "react-helmet-async";
 
 const coreLanguages = ["Java", "JavaScript/TypeScript", "Python", "SQL"];
 
@@ -18,6 +19,17 @@ const technologies = [
 const AboutMe = () => {
   return (
     <div className="container mx-auto max-w-6xl pt-5 px-5 md:px-10 xl:px-20 justify-center items-center flex flex-col azeret-mono-400">
+      <Helmet>
+        <title>Devesh Duptala</title>
+        <meta
+          name="description"
+          content="Learn more about Devesh Duptala, a passionate software engineering student with interests in networking, full-stack development, and more."
+        />
+        <meta
+          name="keywords"
+          content="about me, Devesh Duptala, software engineering, networking, full-stack development"
+        />
+      </Helmet>
       <h1 className="mb-10 azeret-mono-600 text-4xl text-darkgrey dark:text-pinktext">
         About Me
       </h1>
