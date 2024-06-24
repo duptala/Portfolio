@@ -1,5 +1,8 @@
 import React from 'react'
 import Devesh from '/devesh.png'
+import HoverBox from '../components/HoverBox'
+import ExperienceList from '../components/AboutMe/ExperienceList'
+import EducationList from '../components/AboutMe/EducationList'
 
 const AboutMe = () => {
     return (
@@ -9,7 +12,7 @@ const AboutMe = () => {
             </h1>
             <div className='flex flex-col sm:flex-row justify-between w-full mb-10'>
                 <div className='w-full mb-5 md:mb-0 lg:w-1/2 flex justify-center'>
-                    <img className='w-full md:w-auto lg:h-72 object-cover' src={Devesh} alt="A picture of me!" />
+                    <HoverBox><img className='w-full md:w-auto lg:h-72 object-cover' src={Devesh} alt="A picture of me!" /></HoverBox>
                 </div>
                 <div className='w-full h-full lg:w-1/2 flex flex-col gap-6 justify-center text-xs text-justify text-gray-500 dark:text-gray-300 max-w-4xl px-5'>
                     <p>
@@ -26,7 +29,27 @@ const AboutMe = () => {
                     </p>
                 </div>
             </div>
-            <div>hello</div>
+            <div className='flex flex-col justify-center items-center mb-10'>
+                <h1 className="mb-3 flex flex-col justify-center items-center azeret-mono-600 text-2xl text-gray-600 dark:text-pinktext">
+                    Experience
+                </h1>
+                <ExperienceList />
+            </div>
+            <div className='flex flex-col justify-center items-center mb-10'>
+                <h1 className="mb-3 flex flex-col justify-center items-center azeret-mono-600 text-2xl text-gray-600 dark:text-pinktext">
+                    Education
+                </h1>
+                <EducationList />
+            </div>
+            <div className='flex flex-col justify-center items-center mb-10'>
+                <h1 className="mb-3 flex flex-col justify-center items-center azeret-mono-600 text-2xl text-gray-600 dark:text-pinktext">
+                    Skills
+                </h1>
+                <div className='flex flex-row gap-32'>
+                    <div>Core Skills</div>
+                    <div>Technologies</div>
+                </div>
+            </div>
         </div>
     )
 }
