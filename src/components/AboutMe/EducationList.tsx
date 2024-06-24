@@ -35,7 +35,7 @@ const educationData: Education[] = [
     {
         institution: "University of Auckland",
         degree: "Bachelor of Engineering (Honors)",
-        field: "Software",
+        field: "Software Engineering",
         startYear: 2021,
         endYear: 2024,
         academics: [
