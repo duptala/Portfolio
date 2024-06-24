@@ -7,16 +7,19 @@ import ScrollToTop from './components/Home/ScrollToTop';
 
 
 const App: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true); // always default to dark mode
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (storedTheme === 'dark') {
       document.documentElement.classList.add('dark');
       setDarkMode(true);
-    } else {
+    } else if (storedTheme === 'light') {
       document.documentElement.classList.remove('dark');
       setDarkMode(false);
+    } else {
+      document.documentElement.classList.add('dark'); // Default to dark mode
+      setDarkMode(true);
     }
   }, []);
 
