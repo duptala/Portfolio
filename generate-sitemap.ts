@@ -20,7 +20,7 @@ links.forEach((link) => sitemap.write(link));
 sitemap.end();
 
 streamToPromise(sitemap)
-  .then((data: any) => {
+  .then((data: Buffer) => {
     writeStream.write(data.toString());
     writeStream.end();
     console.log("Sitemap generated successfully.");

@@ -3,7 +3,6 @@ import HoverBox from "../components/HoverBox";
 import ExperienceList from "../components/AboutMe/ExperienceList";
 import EducationList from "../components/AboutMe/EducationList";
 import { Helmet } from "react-helmet-async";
-import LazyLoadImage from "../components/LazyLoadImage";
 
 const coreLanguages = ["Java", "JavaScript/TypeScript", "Python", "SQL"];
 
