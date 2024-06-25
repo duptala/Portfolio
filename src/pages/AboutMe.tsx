@@ -1,4 +1,4 @@
-import Devesh from "/devesh.png";
+import Devesh from "/devesh.webp";
 import HoverBox from "../components/HoverBox";
 import ExperienceList from "../components/AboutMe/ExperienceList";
 import EducationList from "../components/AboutMe/EducationList";
