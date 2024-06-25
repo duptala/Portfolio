@@ -7,46 +7,26 @@ interface LazyLoadImageProps {
   alt: string;
 }
 
-interface LazyLoadImageProps {
-  className?: string;
-  src: string;
-  alt: string;
-}
-
 const LazyLoadImage: React.FC<LazyLoadImageProps> = ({
   className,
   src,
   alt,
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [imageHeight, setImageHeight] = useState<number | undefined>(undefined);
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
   const imgRef = useRef<HTMLImageElement>(null);
 
-  useEffect(() => {
-    if (imgRef.current && imgRef.current.complete) {
-      handleImageLoad();
-    }
-  }, []);
-
   const handleImageLoad = () => {
-    if (imgRef.current) {
-      setImageHeight(
-        (imgRef.current.naturalHeight / imgRef.current.naturalWidth) *
-          imgRef.current.width
-      );
-      setIsLoaded(true);
-    }
+    setIsLoaded(true);
   };
 
   return (
     <div
       className={`relative w-full overflow-hidden rounded-xl ${className}`}
       ref={ref}
-      style={{ height: imageHeight }}
     >
       <div
         className={`absolute top-0 left-0 w-full h-full bg-gray-200 ${
@@ -56,7 +36,7 @@ const LazyLoadImage: React.FC<LazyLoadImageProps> = ({
       {inView && (
         <img
           ref={imgRef}
-          className={`absolute top-0 left-0 w-full h-auto object-cover transition-opacity duration-300 ${
+          className={`w-full h-auto object-cover transition-opacity duration-300 ${
             isLoaded ? "opacity-100" : "opacity-0"
           }`}
           src={src}
