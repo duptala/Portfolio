@@ -8,6 +8,7 @@ import LachlanIcon from "/clients/lachlan.webp";
 import MorgzIcon from "/clients/morgz.webp";
 import JeanfilsIcon from "/clients/jeanfils.webp";
 import TekkerzKidIcon from "/clients/tekkerzkid.webp";
+import LazyLoadImage from "../LazyLoadImage";
 
 const Youtube = () => {
   return (
@@ -39,13 +40,9 @@ const Youtube = () => {
         >
           <img src={MorgzIcon} alt="Morgz Icon" />
         </a>
-        <a
-          href="https://www.youtube.com/@Jeanfils"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <p>
           <img src={JeanfilsIcon} alt="Jeanfils Icon" />
-        </a>
+        </p>
         <a
           href="https://www.youtube.com/@TekkerzkidOfficial"
           target="_blank"
@@ -55,11 +52,19 @@ const Youtube = () => {
         </a>
       </div>
       <div className="w-fit lg:w-[80%] flex flex-col gap-4 md:gap-6 mb-10">
-        <img src={MattyFootyHD} alt={MattyFootyHD} />
-        <img src={LightSkinChris} alt={LightSkinChris} />
-        <img src={Lachlan} alt={Lachlan} />
-        <img src={Reloaded} alt={Reloaded} loading="lazy" />
-        <img src={Jeanfils} alt={Jeanfils} loading="lazy" />
+        <LazyLoadImage
+          className="rounded-xl"
+          src={MattyFootyHD}
+          alt="MattyFootyHD"
+        />
+        <LazyLoadImage
+          className="rounded-xl"
+          src={LightSkinChris}
+          alt="LightSkinChris"
+        />
+        <LazyLoadImage className="rounded-xl" src={Lachlan} alt="Lachlan" />
+        <LazyLoadImage className="rounded-xl" src={Reloaded} alt="Reloaded" />
+        <LazyLoadImage className="rounded-xl" src={Jeanfils} alt="Jeanfils" />
       </div>
     </>
   );

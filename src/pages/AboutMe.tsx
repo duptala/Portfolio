@@ -3,6 +3,7 @@ import HoverBox from "../components/HoverBox";
 import ExperienceList from "../components/AboutMe/ExperienceList";
 import EducationList from "../components/AboutMe/EducationList";
 import { Helmet } from "react-helmet-async";
+import LazyLoadImage from "../components/LazyLoadImage";
 
 const coreLanguages = ["Java", "JavaScript/TypeScript", "Python", "SQL"];
 
@@ -36,7 +37,7 @@ const AboutMe = () => {
       <div className="flex flex-col sm:flex-row justify-between w-full mb-10">
         <div className="w-full mb-5 md:mb-0 lg:w-1/2 flex justify-center">
           <HoverBox>
-            <img
+            <LazyLoadImage
               className="w-full md:w-auto lg:h-72 object-cover"
               src={Devesh}
               alt="A picture of me!"

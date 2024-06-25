@@ -1,3 +1,4 @@
+import LazyLoadImage from "../LazyLoadImage";
 import Ball from "/designs/socialmedia/ball.webp";
 import MovieNight from "/designs/socialmedia/movienight.webp";
 import PubQuiz from "/designs/socialmedia/pubquiz.webp";
@@ -13,19 +14,13 @@ const SocialMedia = () => {
         <span className="font-bold">@au.indiansociety</span>, check them out! :)
       </p>
       <div className="w-fit lg:w-[80%] grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 mb-8">
-        <img className="rounded-xl" src={Ball} alt={Ball} loading="lazy" />
-        <img
+        <LazyLoadImage className="rounded-xl" src={Ball} alt="Ball" />
+        <LazyLoadImage
           className="rounded-xl"
           src={MovieNight}
-          alt={MovieNight}
-          loading="lazy"
+          alt="Movie Night"
         />
-        <img
-          className="rounded-xl"
-          src={PubQuiz}
-          alt={PubQuiz}
-          loading="lazy"
-        />
+        <LazyLoadImage className="rounded-xl" src={PubQuiz} alt="Pub Quiz" />
       </div>
     </>
   );

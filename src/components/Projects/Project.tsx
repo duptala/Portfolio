@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import LazyLoadImage from "../LazyLoadImage";
 
 interface ProjectProps {
   project: {
@@ -25,10 +26,10 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
         </div>
       )}
       <div className="flex justify-center">
-        <img
+        <LazyLoadImage
+          className="w-full h-auto rounded-br-none rounded-bl-none rounded-tl-2xl rounded-tr-2xl"
           src={project.image}
           alt={project.title}
-          className="w-full h-auto rounded-br-none rounded-bl-none rounded-tl-2xl rounded-tr-2xl"
         />
       </div>
       <div className="flex flex-col bg-gray-200 dark:bg-darkgrey h-full p-3 md:p-5 rounded-b-xl justify-between">
