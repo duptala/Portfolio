@@ -1,6 +1,6 @@
-import Ball from "/designs/socialmedia/ball.png";
-import MovieNight from "/designs/socialmedia/movienight.png";
-import PubQuiz from "/designs/socialmedia/pubquiz.png";
+import Ball from "/designs/socialmedia/ball.webp";
+import MovieNight from "/designs/socialmedia/movienight.webp";
+import PubQuiz from "/designs/socialmedia/pubquiz.webp";
 
 const SocialMedia = () => {
   return (

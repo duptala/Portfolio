@@ -1,4 +1,4 @@
-import HelloFace from "/Helloface.png";
+import HelloFace from "/Helloface.webp";
 
 const Intro = () => {
   return (

@@ -1,13 +1,13 @@
-import MattyFootyHD from "/designs/youtube/mattyfooty.png";
-import LightSkinChris from "/designs/youtube/lightskinchris.png";
-import Lachlan from "/designs/youtube/lachlan.png";
-import Reloaded from "/designs/youtube/reloaded.png";
-import Jeanfils from "/designs/youtube/jeanfils.png";
+import MattyFootyHD from "/designs/youtube/mattyfooty.webp";
+import LightSkinChris from "/designs/youtube/lightskinchris.webp";
+import Lachlan from "/designs/youtube/lachlan.webp";
+import Reloaded from "/designs/youtube/reloaded.webp";
+import Jeanfils from "/designs/youtube/jeanfils.webp";
 
-import LachlanIcon from "/clients/lachlan.png";
-import MorgzIcon from "/clients/morgz.png";
-import JeanfilsIcon from "/clients/jeanfils.png";
-import TekkerzKidIcon from "/clients/tekkerzkid.png";
+import LachlanIcon from "/clients/lachlan.webp";
+import MorgzIcon from "/clients/morgz.webp";
+import JeanfilsIcon from "/clients/jeanfils.webp";
+import TekkerzKidIcon from "/clients/tekkerzkid.webp";
 
 const Youtube = () => {
   return (

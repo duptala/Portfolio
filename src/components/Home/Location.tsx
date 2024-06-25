@@ -1,5 +1,5 @@
-import MapLocation from "/Location.png";
-import SillyFace from "/Sillyface.png";
+import MapLocation from "/Location.webp";
+import SillyFace from "/Sillyface.webp";
 
 const Location = () => {
   return (

@@ -1,4 +1,4 @@
-import DesignsBackgroundImage from "/designs.png";
+import DesignsBackgroundImage from "/designs.webp";
 
 const Designs = () => {
   return (

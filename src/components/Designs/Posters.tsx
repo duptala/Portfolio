@@ -1,7 +1,7 @@
-import Spiderman from "/designs/posters/spiderman.png";
-import Jumanji from "/designs/posters/jumanji.png";
-import Aaryan from "/designs/posters/aaryan.png";
-import Jaden from "/designs/posters/jaden.png";
+import Spiderman from "/designs/posters/spiderman.webp";
+import Jumanji from "/designs/posters/jumanji.webp";
+import Aaryan from "/designs/posters/aaryan.webp";
+import Jaden from "/designs/posters/jaden.webp";
 
 const Posters = () => {
   return (
